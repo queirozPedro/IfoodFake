@@ -13,13 +13,3 @@ class UserProfileExample(models.Model):
     class Meta:
         verbose_name = "Profile"
         verbose_name_plural = "Profiles"
-
-class DiretorProfile(models.Model):
-
-    sala = models.IntegerField()
-    departamento = models.CharField(max_length=100)
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    
-    class Meta:
-        verbose_name = "Diretor"
-        verbose_name_plural = "Diretores"
